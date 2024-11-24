@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "firstName": "priya",
+      "lastName": "singh",
+      "emailid": "singhpriya123@gmail.com",
+      "mobile": "8448113593"
+    },
+    {
+      "id": 4,
+      "firstName": "neelam",
+      "lastName": "bhatia",
+      "emailid": "neelam123@gmail.com",
+      "mobile": "83845084050"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
