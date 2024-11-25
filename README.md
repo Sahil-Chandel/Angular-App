@@ -1,5 +1,3 @@
-# Simple Notes App for TWS Community
-This is a simple notes app built
 
 
 ## Installation
