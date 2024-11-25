@@ -3,7 +3,7 @@
 ## Installation
 1. Clone the repository
 ```
-
+https://github.com/Sahil-Chandel/Angular-App.git
 ```
 
 2. Build the app
