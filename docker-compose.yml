@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  angular-app:
+    build: .
+    image: angular-app:latest  # You can also use a custom tag or DockerHub image if needed
+    ports:
+      - "8080:80"               # Expose port 8080 on the host to port 80 inside the container
+    networks:
+      - app_network
+    container_name: angular-app
+
+networks:
+  app_network:
+    driver: bridge
