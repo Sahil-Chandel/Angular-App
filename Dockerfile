@@ -6,7 +6,6 @@ WORKDIR /app
 # Install dependencies
 COPY package.json package-lock.json ./
 RUN npm install
-RUN ls -la /app/dist
 
 
 # Copy the Angular app source code
