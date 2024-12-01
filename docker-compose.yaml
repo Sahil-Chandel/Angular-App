@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   angular-app:
     build: .
@@ -9,9 +7,8 @@ services:
     networks:
       - app_network
     container_name: angular-app
-volumes:
-  - ./src:/usr/share/nginx/html
-
+    volumes:
+      - ./src:/usr/share/nginx/html  # Correct placement of volumes inside the service block
 
 networks:
   app_network:
