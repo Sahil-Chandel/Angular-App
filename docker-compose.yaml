@@ -9,6 +9,9 @@ services:
     networks:
       - app_network
     container_name: angular-app
+volumes:
+  - ./src:/usr/share/nginx/html
+
 
 networks:
   app_network:
