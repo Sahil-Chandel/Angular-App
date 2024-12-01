@@ -1,14 +1,14 @@
+version: '3.8'
+
 services:
   angular-app:
     build: .
-    image: angular-app:latest  # You can also use a custom tag or DockerHub image if needed
+    image: angular-app:latest
     ports:
-      - "8080:80"               # Expose port 8080 on the host to port 80 inside the container
+      - "8080:80"
     networks:
       - app_network
     container_name: angular-app
-    volumes:
-      - ./src:/usr/share/nginx/html  # Correct placement of volumes inside the service block
 
 networks:
   app_network:
