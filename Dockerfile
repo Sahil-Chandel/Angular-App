@@ -12,7 +12,7 @@ RUN npm run build --prod
 # Stage 2: Serve the app using Nginx
 FROM nginx:alpine
 
-# Replace <your-angular-app-name> with the correct project name
-COPY --from=build /app/dist/<your-angular-app-name> /usr/share/nginx/html
+# Correct path to match your `angular.json` outputPath
+COPY --from=build /app/dist/angular-app /usr/share/nginx/html
 
 EXPOSE 80
