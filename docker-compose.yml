@@ -2,13 +2,15 @@ version: '3.8'
 
 services:
   angular-app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: angular-app:latest
     ports:
       - "8080:80"
+    container_name: angular-app
     networks:
       - app_network
-    container_name: angular-app
 
 networks:
   app_network:
